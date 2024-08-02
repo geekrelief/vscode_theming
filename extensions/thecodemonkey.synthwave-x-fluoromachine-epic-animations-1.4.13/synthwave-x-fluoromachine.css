@@ -54,7 +54,7 @@
 /* Add the subtle gradient to the editor background */
 .editor .content, .monaco-editor {
   background-color: transparent !important;
-  background-image: linear-gradient(to bottom, #200933 75%, #3d0b43);
+  background-image: linear-gradient(to bottom, #0e0119 80%, #3d0b43);
   background-size: auto 100vh;
   background-position: top;
   background-repeat: no-repeat;
@@ -193,7 +193,7 @@ canvas {
     background: linear-gradient(to bottom, #8a2dc0,  #fc28a8);
     box-shadow: 0 0 5px #fc199a;
     border-color: #8a2dc0; 
-    color: #241b2f; 
+    color: #241b2f;
 }
 
 .monaco-inputbox>.wrapper>textarea.input::selection {
@@ -211,7 +211,7 @@ canvas {
 }
 
 .monaco-list-row.focused, .monaco-list-row.selected {
-  background-color: #8a2dc033 !important;
+  background-color: #8a2dc04d !important;
 }
 
 .explorer-folders-view span[title~="emphasized"], .monaco-icon-label[title~="emphasized"]::after {
