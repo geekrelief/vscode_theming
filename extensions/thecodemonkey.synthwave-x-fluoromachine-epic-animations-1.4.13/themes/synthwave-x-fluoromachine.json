@@ -1,6 +1,7 @@
 {
   "name": "SynthWave 84",
   "type": "dark",
+  "semanticHighlighting": true,
   "colors": {
     "focusBorder": "#1f212b",
     "foreground": "#ffffffff",
@@ -136,6 +137,11 @@
     "gitDecoration.ignoredResourceForeground": "#ffffff59",
     "breadcrumbPicker.background": "#232530"
   },
+  "semanticTokenColors": {
+    "variable": {
+      "foreground": "#D8B95E"
+    }
+  },
   "tokenColors": [
     {
       "name": "Comment",
@@ -166,8 +172,8 @@
     {
       "name": "Variable",
       "scope": [
-        "variable",
-        "entity.name.variable"
+        "entity.name.variable",
+        "variable"
       ],
       "settings": {
         "foreground": "#61e2ff"
