@@ -1,42 +1,79 @@
 
-.mtk3, .mtk6 {
+.mtk3 {
   color: #61e2ff;
-  text-shadow: 0 0 2px #001716, 0 0 5px #03edf933, 0 0 10px #ffff6633;
+  /*text-shadow: 0 0 2px #001716, 0 0 5px #03edf933, 0 0 10px #ffff6633;*/
 }
 
-.mtk3.mtki {
+.mtk6 { /* property */
+  color: #61e2ff;
+  text-shadow: 0 0 2px #001716, 0 0 5px #03edf933, 0 0 10px #61e2ff99;
+}
+
+/* punctuation separator -> . : punctuation terminator ; */
+/*
+.mtk1 {
+  color: transparent;
+  background: linear-gradient(to bottom, #f152cf99, #f152cf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 10px #6144a299;
+}
+*/
+
+.mtk6.mtki { /* parameter */
+  color: transparent;
+  background: linear-gradient(to bottom, #f152cf99, #f152cf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 10px #6144a299;
+}
+
+.mtk3.mtki { /* comment */
   font-style: italic;
   /*color: #279bfa99;*/
-  color: #9963ff99;
+  /*color: #6144a2;*/
+  color: transparent;
+  background: linear-gradient(to bottom, #6144a2, #6144a299);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 10px #6144a299;
 }
 
-.mtk4, .mtk5, .mtk11, .mtk14 {
+.mtk4, .mtk5, .mtk14 { /* mtk4 type, string, variable language: this */
   /*color: #9963ff;*/
   color: #14b5ff;
+  text-shadow: 0 0 5px #14b5ff99, 0 0 10px #14b5ff99, 0 0 2px #000000ff;
 }
 
-.mtk8, .mtk9 {
+.mtk8, .mtk9 { /* mtk8 function */
   /* color: #fd8902; */
   color: #ffcc00;
   text-shadow: 0 0 2px #100c0f, 0 0 3px #ffaa0099, 0 0 5px #ffaa0099, 0 0 10px #ffaa0099;
   font-style: italic;
 }
 
-/* .mtk7 {
-  color: #8a2dc0;
-  text-shadow: 0 0 2px #000, 0 0 10px #8a2dc066, 0 0 5px #8a2dc066, 0 0 25px #8a2dc066;
-} */
-
-/* .mtk8 {
-  color: #72f1b8;
-  text-shadow: 0 0 2px #100c0f, 0 0 10px #257c55, 0 0 35px #212724;
-} */
-
-.mtk7, .mtk10 {
+.mtk7, .mtk10 { /* mtk7 operator, keyword, directive */
   color: #fc1952be;
-  text-shadow: 0 0 2px #393a33, 0 0 35px #ffffff44, 0 0 10px #fc199a, 0 0 2px #fc199a;
+  text-shadow: 0 0 2px #393a33, 0 0 3px #ffffff44, 0 0 10px #fc199a, 0 0 2px #fc199a;
 }
 
+.mtk11 { /* keyword operator assignment = */
+  color: transparent;
+  background: linear-gradient(to bottom, #f152cf99, #f152cf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 10px #6144a299;
+}
+
+/* local, global variable */
+.mtk17 {
+  font-style: italic;
+  color: transparent; /* this doesn't work well with text-shadow */
+  background: linear-gradient(to bottom, #00a6ff, #527af1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 10px #01bfff;
+}
 
 .mtk10 {
     font-style: italic;
