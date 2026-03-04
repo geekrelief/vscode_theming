@@ -1,4 +1,6 @@
-https://github.com/user-attachments/assets/10710acf-c45a-4dbf-aedc-1af8e811e07f
+https://github.com/user-attachments/assets/cc85686e-7363-46b7-be1d-658144840aa2
+
+
 
 My vscode theme uses a slightly modified version of synthwave fluoromachine to stop the animations and adds glow and slight transparency with glassit.
 
