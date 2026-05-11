@@ -5,8 +5,8 @@
 }
 
 .mtk6 { /* property */
-  color: #61e2ff;
-  text-shadow: 0 0 2px #001716, 0 0 5px #03edf933, 0 0 10px #61e2ff99;
+  color: #ff29d4d4;
+  text-shadow: 0 0 2px #170005, 0 0 5px #f903ed33, 0 0 10px #ed61ff99;
 }
 
 /* punctuation separator -> . : punctuation terminator ; */
@@ -39,22 +39,32 @@
 }
 
 
-.mtk4, .mtk5, .mtk14 { /* mtk4 type, string, variable language: this */
+.mtk4, .mtk5 { /* mtk4 type, string, variable language: this */
   /*color: #9963ff;*/
   color: #14b5ff;
   text-shadow: 0 0 5px #14b5ff99, 0 0 2px #000000ff;
 }
 
+.mtk13, .mtk14 { /* comment */
+  color: #f6c17c;
+  text-shadow: 0 0 5px #f6c17c99, 0 0 2px #000000ff;
+}
+
 .mtk8, .mtk9 { /* mtk8 function */
   /* color: #fd8902; */
   color: #ffcc00;
-  text-shadow: 0 0 2px #100c0f, 0 0 3px #ffaa0099, 0 0 5px #ffaa0099; 
+  text-shadow: 0 0 2px #100c0f, 0 0 3px #ffaa0099, 0 0 5px #ffaa0099;
   font-style: italic;
 }
 
-.mtk7, .mtk10 { /* mtk7 operator, keyword, directive */
+.mtk7 { /* mtk7 operator, keyword, directive */
   color: #fc1952be;
-  text-shadow: 0 0 2px #393a33, 0 0 3px #ffffff44, 0 0 10px #fc199a, 0 0 2px #fc199a;
+  text-shadow: 0 0 2px #393a33, 0 0 3px #ffffff44, 0 0 10px #fc199abc, 0 0 2px #fc199abc;
+}
+
+.mtk10 { /* type */
+  color: #14b5ff;
+  text-shadow: 0 0 5px #14b5ff99, 0 0 2px #000000ff;
 }
 
 .mtk11 { /* keyword operator assignment = */
@@ -80,10 +90,10 @@
   color: transparent; /* this doesn't work well with a dark text-shadow */
   background:
     linear-gradient(
-      135deg,  
-      transparent 45%, 
-      rgba(255,255,255,1) 50%, 
-      rgba(255,255,255,1) 52%, 
+      135deg,
+      transparent 45%,
+      rgba(255,255,255,1) 50%,
+      rgba(255,255,255,1) 52%,
       transparent 55%
     ),
     linear-gradient(to bottom, #faf1ac 0%, #ffd000 60%, #ff1362 100%);
@@ -166,7 +176,7 @@
 } */
 
 canvas {
-    z-index: 2; 
+    z-index: 2;
 }
 
 .minimap-slider {
@@ -236,7 +246,7 @@ canvas {
   bottom: -1px;
   left: 0;
   right: 0;
-  height: 4px;  
+  height: 4px;
   background: linear-gradient(to right, #fc28a8, #03edf9) !important;
 }
 
@@ -246,10 +256,10 @@ canvas {
   filter: drop-shadow(0 0 5px #03edf9);
 }
 
-.monaco-editor .cursor { 
+.monaco-editor .cursor {
     background: linear-gradient(to bottom, #8a2dc0,  #fc28a8);
     box-shadow: 0 0 5px #fc199a;
-    border-color: #8a2dc0; 
+    border-color: #8a2dc0;
     color: #241b2f;
 }
 
