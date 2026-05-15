@@ -5,8 +5,14 @@
 }
 
 .mtk6 { /* property */
-  color: #ff29d4d4;
+  /*color: #ff29d4d4;
   text-shadow: 0 0 2px #170005, 0 0 5px #f903ed33, 0 0 10px #ed61ff99;
+  */
+  color: transparent;
+  background: linear-gradient(to bottom, #d4598af7, #9ac7fd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 10px #6144a299;
 }
 
 /* punctuation separator -> . : punctuation terminator ; */
@@ -46,7 +52,7 @@
 }
 
 .mtk13, .mtk14 { /* comment */
-  color: #f6c17c;
+  color: #f9dab080;
   text-shadow: 0 0 5px #f6c17c99, 0 0 2px #000000ff;
 }
 
@@ -85,7 +91,7 @@
 }
 
 /* local, global variable */
-.mtk17, .mtk18 {
+.mtk17, .mtk18, .mtk19 {
   font-style: italic;
   color: transparent; /* this doesn't work well with a dark text-shadow */
   background:
