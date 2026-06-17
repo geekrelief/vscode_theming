@@ -128,7 +128,7 @@
       rgba(255,255,255,1) 52%,
       transparent 55%
     ),
-    linear-gradient(to bottom, #faf1ac 0%, #ffd000 60%, #ff1362 100%);
+    linear-gradient(to bottom, #faf1ac 0%, #ffd000 40%, #ff1362 100%);
   -webkit-background-clip: text;
   background-clip: text;
   /*text-shadow: 0 0 2px #f6c17caa, 0 0 5px #f6c17caa;*/
