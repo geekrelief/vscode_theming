@@ -9,10 +9,10 @@
   text-shadow: 0 0 2px #170005, 0 0 5px #f903ed33, 0 0 10px #ed61ff99;
   */
   color: transparent;
-  background: linear-gradient(to bottom, #d4598af7, #9ac7fd);
+  background: linear-gradient(to bottom, #f6e17c, #f6817c);
   -webkit-background-clip: text;
   background-clip: text;
-  text-shadow: 0 0 10px #6144a299;
+  text-shadow: 0 0 10px #6144f239;
 }
 
 /* punctuation separator -> . : punctuation terminator ; */
@@ -34,14 +34,37 @@
   text-shadow: 0 0 10px #ff005199;
 }
 
+@property --gradient-start {
+  syntax: '<color>';
+  initial-value: #8b007bd0;
+  inherits: false;
+}
+
+@property --gradient-end {
+  syntax: '<color>';
+  initial-value: #5e0076A0;
+  inherits: false;
+}
+
 .mtk3.mtki { /* comment */
   font-style: italic;
   /*color: #6144a299;*/
   color: transparent;
-  background: linear-gradient(to bottom, #8b007b, #5e0076);
+  background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: 0 0 10px #6144a299;
+  /*filter: blur(1px);*/
+  transition: --gradient-start 0.5s ease, --gradient-end 0.5s ease;
+}
+
+
+.monaco-editor:has(.mtk3.mtki:hover) .mtk3.mtki {
+  --gradient-start: #f6c17c;
+  --gradient-end: #f6c17c;
+  /*color: #f6c17ce0;*/
+  text-shadow: 0 0 5px #f6c10c99;
+  /*filter: blur(0px);*/
 }
 
 
@@ -51,10 +74,12 @@
   text-shadow: 0 0 5px #14b5ff99, 0 0 2px #000000ff;
 }
 
-.mtk13, .mtk14 { /* comment */
+ /* comment */
+.mtk13, .mtk14 {
   color: #f9dab080;
-  text-shadow: 0 0 5px #f6c17c99, 0 0 2px #000000ff;
+  text-shadow: 0 0 5px #f6c10c99, 0 0 2px #000000ff;
 }
+
 
 .mtk8, .mtk9 { /* mtk8 function */
   /* color: #fd8902; */
@@ -71,6 +96,7 @@
 .mtk10 { /* type */
   color: #14b5ff;
   text-shadow: 0 0 5px #14b5ff99, 0 0 2px #000000ff;
+  font-style: italic;
 }
 
 .mtk11 { /* keyword operator assignment = */
@@ -108,11 +134,7 @@
   /*text-shadow: 0 0 2px #f6c17caa, 0 0 5px #f6c17caa;*/
   background-size: 500% 100%, 100% 100%;
   background-repeat: no-repeat;
-  animation: glint 15s infinite ease;
-}
-
-.mtk10 {
-    font-style: italic;
+  /*animation: glint 15s infinite ease;*/
 }
 
 .monaco-editor .margin, .monaco-editor-background, .monaco-editor .inputarea.ime-input {
